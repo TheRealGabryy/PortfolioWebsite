@@ -1,0 +1,113 @@
+:root {
+    --primary: #e3e3e3;
+    --secondary: #fff;
+    --tertiary: #000;
+    --accent: #8e8e8e;
+}
+
+@font-face {
+    font-family: "Kugile";
+    src: url("Assets/fonts/Kugile.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Reset the stuff that causes your unwanted gaps */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--secondary); }
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../Assets/IMG/Backgrounds.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: grid;
+    place-items: center;
+    padding: clamp(16px, 4vw, 64px);
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;          /* vertically align logo + text */
+    justify-content: center;
+    gap: clamp(12px, 2vw, 28px);  /* controls logo <-> text distance */
+    padding: clamp(10px, 2vw, 20px);
+}
+
+/* LOGO BLOCK */
+.hero__logo {
+    width: clamp(320px, 20vmin, 260px);
+    height: clamp(320px, 20vmin, 260px);
+
+    flex: 0 0 auto;
+}
+
+/* TEXT BLOCK */
+.hero__text {
+    display: flex;
+    align-items: center;
+}
+
+/* This is the snapping trick: the lockup shrinks to the title width */
+.lockup {
+    display: inline-grid;
+    justify-items: stretch; /* children fill the lockup width */
+    row-gap: 6px;           /* controls title <-> subtitle distance tightly */
+
+}
+
+/* Remove default margins so elements can be "very close" */
+.title,
+.subtitle {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: var(--tertiary);
+}
+
+/* Title defines the lockup width */
+.title {
+    font-family: Kugile, sans-serif;
+    font-size: 128px;
+    width: fit-content;
+
+}
+
+/* Subtitle snaps to lockup width (which equals title width) */
+.subtitle {
+    font-family: Ubuntu, sans-serif;
+    font-size: clamp(34px, 1.4vw, 20px);
+    width: 100%;
+    text-align: left; /* right edge snaps to title border */
+    line-height: 1.1;
+    text-decoration: underline black solid;
+}
+
+
+.debug * {
+    outline: 2px solid var(--tertiary);
+}
+
+.button {
+    background-color: var(--primary);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-family: Kugile, sans-serif;
+    height: 46px;
+    width: 160px;
+    scale: 1.2;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button:hover {
+    color: var(--tertiary);
+    border: 1px solid var(--tertiary);
+
+}
