@@ -69,6 +69,7 @@ body { margin: 0; background: var(--secondary); }
     padding: 0;
     line-height: 1;
     color: var(--tertiary);
+    font-family: kugile, sans-serif;
 }
 
 /* Title defines the lockup width */
@@ -109,5 +110,4 @@ body { margin: 0; background: var(--secondary); }
 .button:hover {
     color: var(--tertiary);
     border: 1px solid var(--tertiary);
-
 }
