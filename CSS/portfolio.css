@@ -1,0 +1,57 @@
+
+.online-notes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.projects-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 30vw;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.project-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 30vh;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.project-title {
+    font-size: 18px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+}
+
+.project-description {
+    font-family: Ubuntu, sans-serif;
+    font-size: 14px;
+}
+
+div {
+    border: 1px solid var(--tertiary);
+}

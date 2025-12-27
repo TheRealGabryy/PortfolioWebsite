@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="CSS/style.css"/>
     <link rel="stylesheet" href="CSS/other.css">
+    <link rel="stylesheet" href="CSS/portfolio.css">
 </head>
 <body>
 
@@ -42,16 +43,58 @@
         <div class="about-me__text">
             <h2 class="about-me__title">Gabriele Bolognese</h2>
             <p class="about-me__paragraph">
-                I build software systems with a strong focus on performance, structure, and long-term scalability.<br><br>
+                I build software systems with a strong focus on performance, structure, and long-term
+                scalability.<br><br>
 
                 I started from low-level programming and system design, then moved into AI and machine learning to
                 understand how intelligent systems actually work. <br><br>
 
                 I design and implement algorithms from scratch in Java to master the fundamentals: neural networks, loss
-                functions, backpropagation, and optimization. then re-implement them in Pytorch for production use <br><br>
+                functions, backpropagation, and optimization. then re-implement them in Pytorch for production use
+                <br><br>
             </p>
         </div>
     </section>
+
+    <section class="experience">
+
+    </section>
+
+    <section class="projects-section">
+        <div class="project ">
+            <div class="project-media">
+
+            </div>
+            <div class="project-about">
+                <p class="project-title">
+                    PROJECT 1
+                </p>
+                <p class="project-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                </p>
+                <p class="project-link">
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="online-notes">
+        <div class="about-notes">
+            <p class="about-me__title">What are these notes?</p>
+            <p class="about-me__paragraph">
+                These notes have been coded by me personally to consolidate my knowledge about the topics of the notes
+                <b>AND</b> at the same time, training my web developer skills. with static website with large file bases
+                and text bases.
+            </p>
+        </div>
+    </section>
+
+    <section class="reviews">
+
+    </section>
+
+
 </main>
 
 </body>
